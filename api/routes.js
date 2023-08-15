@@ -1,11 +1,9 @@
 const router = require('express').Router()
-const {returnIndex, showBio} = require("./contreller.js")
+const {showBio, showListaBio} = require("./contreller.js")
 
 
-
-
-router.get('/', returnIndex)
 router.get('/show_bio', showBio)
+router.get('/show_lista_bio', showListaBio)
 
 
 module.exports = router
