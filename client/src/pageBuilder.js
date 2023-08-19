@@ -40,19 +40,23 @@ const getApiGitHub = () => {
         let data = await res.json();
         data.map (item => {
             let projetos = document.createElement('div')
-            projetos.innerHTML = `
-            <div class="project-content">
+            projetos.innerHTML = 
+            `
+           
             <div class="card" style="width: 18rem;">
-            <img src="Assets/wikimedieval.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text"> ${item.name}</p>
-            </div>
-            <div>
-            <span class= "language"><span class= "circle"></span>${item.language}</span>
-            <a href="${item.html_url}" target="_black">${item.html_url}</a>
-            </div>
-        </div>`
-            
+                <img src="Assets/pasta.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto: ${item.name}</h5>
+                  <p class="card-text">Descrição: ${item.description}</p>
+                  <p class="card-text">Linguagem mais utilizada: ${item.language}</p>
+                  <a href="${item.html_url}" class="btn btn-primary">Ir para repositório</a>
+                </div>
+              </div>
+              </div>
+             
+
+            `
+
             repositorios.appendChild(projetos)
         })
     })

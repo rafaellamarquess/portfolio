@@ -104,21 +104,19 @@
 
 
 
-/*  projetos*/
+ /* projetos*/
 .project{
     background: #333;
     color: #fff;
 }
 
 .project .project-content{
-    display: flex;
-
-   
+    justify-content:space-between;
 }
+
 
 .project .project-content .card{
     background: #222;
-    padding: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
