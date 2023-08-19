@@ -112,12 +112,8 @@
 
 .project .project-content{
     display: flex;
-    justify-content:space-evenly;
-   
-}
 
-.project .title::before{
-    background: #fff;
+   
 }
 
 .project .project-content .card{
