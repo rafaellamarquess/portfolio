@@ -46,7 +46,7 @@ const swipper = new Swiper (".swiper-container", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-        appendButtons: document.querySelector(".swiper-container"),
+        appendButtons: document.querySelector(".project-content"),
     },
 })
 
