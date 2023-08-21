@@ -1,31 +1,31 @@
 /*  navbar início*/
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
     padding: 30px 0;
     transition: all 0.3s ease;
 }
 
-.navbar.sticky{
+.navbar.sticky {
     background: #784f8d;
-    padding: 0px ;
+    padding: 0px;
 }
 
-.navbar.sticky .logo a span{
+.navbar.sticky .logo a span {
     color: #fff;
- }
- 
-.navbar .logo a{
-   color: #fff;
-   font-size: 40px;
-   font-weight: 500;
-   text-decoration: none;
-   margin: 50px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 50px;
 }
 
 
 /*home e menu*/
-.home{
+.home {
     display: flex;
     background-color: #333;
     background-size: cover;
@@ -34,30 +34,30 @@
     min-height: 500px;
 }
 
-.home .max-width{
+.home .max-width {
     margin: auto;
 }
 
-.home .home-content .text-2{
+.home .home-content .text-2 {
     font-size: 75px;
     font-weight: 500;
     margin-left: -3px;
 }
 
 
-.home .home-content .text-3{
+.home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
 
 
-.home .home-content .text-3 span{
-    color:#784f8d;
+.home .home-content .text-3 span {
+    color: #784f8d;
     font-weight: 700;
 }
 
 
-.home .home-content a{
+.home .home-content a {
     display: inline-block;
     background: #784f8d;
     color: #fff;
@@ -69,7 +69,7 @@
 }
 
 
-.home .home-content a:hover{
+.home .home-content a:hover {
     color: #ffffff;
     background: none;
 }
@@ -77,59 +77,74 @@
 
 /* about*/
 .about {
-    background-color:#b9b9b9;
+    background-color: #b9b9b9;
 }
 
 .about .about-content {
     display: flex;
 }
 
-.about .about-content .left{
+.about .about-content .left {
     padding-left: 400px;
-  
+
 }
 
-.about .about-content .left img{
+.about .about-content .left img {
     max-width: 400px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.about .about-content .right{
+.about .about-content .right {
     padding-left: 100px;
     padding-right: 200px;
-
 }
 
 
 
- /* projetos*/
-.project{
+/* projetos*/
+.project {
     background: #333;
     color: #fff;
 }
 
-.project .project-content .card{
+.project .project-content {
+    width: 100%
+
+}
+
+.project .project-content .card {
     background: #222;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 40px;
+    height: 480px;
 }
 
-.project .project-content .card:hover{
+.project .project-content .card:hover {
     background: #784f8d;
 }
+
+.swiper-container { 
+    overflow: hidden;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    position: fixed;
+    color: #fff;
+  }
 
 
 
 /*  sessão skills  */
-.skills{
+.skills {
     background-color: #b9b9b9;
 }
 
-.skills .skills-content{
+.skills .skills-content {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 
@@ -140,7 +155,7 @@
 
 
 /* scroll up e geral */
-.scroll-up-btn{
+.scroll-up-btn {
     position: fixed;
     width: 41px;
     height: 45px;
@@ -157,20 +172,22 @@
     transition: all 0.3s ease;
 }
 
-.scroll-up-btn.show{
+.scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
-    pointer-events:auto;
+    pointer-events: auto;
     color: #fff;
 }
 
 
-section{
+section {
     padding: 50px 0;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 
-section .title{
+section .title {
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -179,7 +196,7 @@ section .title{
     position: relative;
 }
 
-section .title::before{
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0;

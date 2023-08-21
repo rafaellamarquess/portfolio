@@ -40,12 +40,13 @@ const getRepository = () => {
 }
 
 
-new Swiper (".swiper-container", {
+const swipper = new Swiper (".swiper-container", {
     slidesPerView: 6,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+        appendButtons: document.querySelector(".swiper-container"),
     },
 })
 
@@ -55,11 +56,10 @@ const carouselBuilder = (item) => {
     const divElement = document.createElement("div");
     divElement.className = "swiper-slide card";
     divElement.innerHTML = `
-        <div class= "card" style= "width: 18rem; height: 100%">
             <img src="Assets/pasta.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Projeto: ${item.name}</h5>
-                <p class="card-text">Descrição: ${item.description}</p>
+                
                 <p class="card-text">Linguagem mais utilizada: ${item.language}</p>
                 <a href="${item.html_url}" class="btn btn-primary">Ir para repositório</a>
             </div>
