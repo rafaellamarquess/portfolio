@@ -40,27 +40,33 @@ const getRepository = () => {
 }
 
 
-const carouselBuilder = (item) => {
+new Swiper (".swiper-container", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+})
 
-    const carouselProject = document.querySelector("#carousel-project")
-    // console.log(carouselProject)
-    const divElement = document.createElement('div')
-    divElement.setAttribute ("style", "width: 18rem;")
-    divElement.innerHTML = 
-    `
-    <div class="card" style="width: 18rem;">
-        <img src="Assets/pasta.png" class="card-img-top" alt="...">
+
+const carouselBuilder = (item) => {
+    const carouselProject = document.querySelector(".swiper-wrapper");
+    const divElement = document.createElement("div");
+    divElement.className = "swiper-slide card";
+    divElement.innerHTML = `
+        <div class= "card" style= "width: 18rem; height: 100%">
+            <img src="Assets/pasta.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Projeto: ${item.name}</h5>
-                  <p class="card-text">Descrição: ${item.description}</p>
-                  <p class="card-text">Linguagem mais utilizada: ${item.language}</p>
-                  <a href="${item.html_url}" class="btn btn-primary">Ir para repositório</a>
+                <p class="card-text">Descrição: ${item.description}</p>
+                <p class="card-text">Linguagem mais utilizada: ${item.language}</p>
+                <a href="${item.html_url}" class="btn btn-primary">Ir para repositório</a>
             </div>
         </div>
-     </div>
-    `
+    `;
 
-    carouselProject.appendChild (divElement)
+    carouselProject.appendChild(divElement);
 }
 
-getRepository()
+getRepository();

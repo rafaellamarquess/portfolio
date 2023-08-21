@@ -110,11 +110,6 @@
     color: #fff;
 }
 
-.project .project-content{
-    justify-content:space-between;
-}
-
-
 .project .project-content .card{
     background: #222;
     cursor: pointer;
@@ -124,6 +119,7 @@
 .project .project-content .card:hover{
     background: #784f8d;
 }
+
 
 
 /*  sessão skills  */
