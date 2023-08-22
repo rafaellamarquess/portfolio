@@ -86,7 +86,10 @@
 
 .about .about-content .left {
     padding-left: 400px;
+}
 
+.about .about-content .right {
+    padding-left: 15px;
 }
 
 .about .about-content .left img {
@@ -96,10 +99,6 @@
     border-radius: 10px;
 }
 
-.about .about-content .right {
-    padding-left: 100px;
-    padding-right: 200px;
-}
 
 
 
